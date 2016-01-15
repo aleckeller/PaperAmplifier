@@ -1,2 +1,2 @@
 # PaperAmplifier
-# Download folder and run the PaperAmplifierGooey.java
+# Download zip folder and run the PaperAmplifierGooey.java
