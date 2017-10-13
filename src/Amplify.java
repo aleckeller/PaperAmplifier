@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
+import java.util.Arrays;
 
 import javax.swing.JOptionPane;
 
@@ -19,33 +20,35 @@ public class Amplify extends Results {
     private static Map<String, Integer> commOccurrences = new TreeMap<String, Integer>();
     private static Map<String, Integer> misSpelledWords = new TreeMap<String, Integer>();
 
-    private static ArrayList<String> commWords = new ArrayList<String>();
+    private static String [] commArray = new String[]{"the","be","i","to","of","and","a","in","that","have","it","for","not","on","with","he","as","you","do","at","but","is"};
+
+    private static ArrayList<String> commWords = new ArrayList<String>(Arrays.asList(commArray));
     private static ArrayList<String> dictWords = new ArrayList<String>();
 
     public static void process(File file) {
 
-        commWords.add("the");
-        commWords.add("be");
-        commWords.add("i");
-        commWords.add("to");
-        commWords.add("of");
-        commWords.add("and");
-        commWords.add("a");
-        commWords.add("in");
-        commWords.add("that");
-        commWords.add("have");
-        commWords.add("it");
-        commWords.add("for");
-        commWords.add("not");
-        commWords.add("on");
-        commWords.add("with");
-        commWords.add("he");
-        commWords.add("as");
-        commWords.add("you");
-        commWords.add("do");
-        commWords.add("at");
-        commWords.add("but");
-        commWords.add("is");
+        // commWords.add("the");
+        // commWords.add("be");
+        // commWords.add("i");
+        // commWords.add("to");
+        // commWords.add("of");
+        // commWords.add("and");
+        // commWords.add("a");
+        // commWords.add("in");
+        // commWords.add("that");
+        // commWords.add("have");
+        // commWords.add("it");
+        // commWords.add("for");
+        // commWords.add("not");
+        // commWords.add("on");
+        // commWords.add("with");
+        // commWords.add("he");
+        // commWords.add("as");
+        // commWords.add("you");
+        // commWords.add("do");
+        // commWords.add("at");
+        // commWords.add("but");
+        // commWords.add("is");
 
         // check if we can actually process file
         try {
